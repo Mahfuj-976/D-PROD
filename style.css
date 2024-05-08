@@ -1,113 +1,175 @@
 /* common shared styles */
-*{
-    margin: 0px;
-    padding: 0px;
+* {
+  margin: 0px;
+  padding: 0px;
 }
-.title{
-    font-size: 50px;
-    font-weight: bold;
-    text-align: center;
-    padding: 20px;
-
+.title {
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+  padding: 20px;
 }
 /* nav bar styles */
-.nav_container{
-    background-color: black;
-    display: flex;
-    padding: 20px;
-    justify-content: space-around;
-    align-items: center;
-    margin-bottom: 2px;
+.nav_container {
+  background-color: black;
+  display: flex;
+  padding: 20px;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 2px;
 }
-.nav_logo{
-    width: 150px;
-    height: 30px;
+.nav_logo {
+  width: 150px;
+  height: 30px;
 }
-.nav_menu{
-    color: white;
-    display: flex;
+.nav_menu {
+  color: white;
+  display: flex;
 }
-.item{
-    list-style: none;
-    margin-right: 30px;
-    padding: 7px;
-    font-size: 23px;
-    cursor: pointer;
+.item {
+  list-style: none;
+  margin-right: 30px;
+  padding: 7px;
+  font-size: 23px;
+  cursor: pointer;
 }
-.item:hover{
-    background-color: rgb(115, 75, 180);
+.item:hover {
+  background-color: rgb(115, 75, 180);
 }
 
 /* banner styles */
-.banner_container{
-    display: flex;
-    justify-content: space-around;
-    height: 100vh;
-    align-items: center;
-    gap: 30px;
-    background-image: url(./images/background.png), linear-gradient(-90deg, #858282,#000);
-    color: white;
-    
+.banner_container {
+  display: flex;
+  justify-content: space-around;
+  height: 100vh;
+  align-items: center;
+  gap: 30px;
+  background-image: url(./images/background.png),
+    linear-gradient(-90deg, #858282, #000);
+  color: white;
 }
-.banner-img{
-    width: 300px;
+.banner-img {
+  width: 300px;
 }
-.banner_btn{
-    background-color:rgb(250, 11, 11) ;
-    border: none;
-    padding: 10px;
-    font-size: 20px 5px;
-    font-weight: 400;
-    margin-top: 20px;
-    color: white;
-    border-radius: 10px 0px;
-    cursor: pointer;
+.banner_btn {
+  background-color: rgb(250, 11, 11);
+  border: none;
+  padding: 10px;
+  font-size: 20px 5px;
+  font-weight: 400;
+  margin-top: 20px;
+  color: white;
+  border-radius: 10px 0px;
+  cursor: pointer;
 }
-.banner_btn:hover{
-    background-color: rgb(13, 174, 10);
+.banner_btn:hover {
+  background-color: rgb(13, 174, 10);
 }
-.banner_title{
-    font-size: 55px;
-    font-weight: bold;
-    margin-bottom: 20px;
+.banner_title {
+  font-size: 55px;
+  font-weight: bold;
+  margin-bottom: 20px;
 }
-.banner_moto{
-    font-size: 18px;
+.banner_moto {
+  font-size: 18px;
 }
 
 /* about us section style */
-.about_container{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+.about_container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
-.about_img{
-    width: 300px;
+.about_img {
+  width: 300px;
 }
-.about_moto{
-    font-size: 27px;
-    text-align: justify;
-    margin-bottom: 10px;
+.about_moto {
+  font-size: 27px;
+  text-align: justify;
+  margin-bottom: 10px;
 }
 
 /* our services section */
-.services_container{
+.services_section{
+    height: 70vh;
+    background-image: url('./images/background.png'),linear-gradient(45deg,rgb(5, 5, 5), #2e2e2e);
+    color: white;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.services_container {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px;
+
+}
+.services_icon {
+  width: 80px;
+}
+.box {
+  width: 200px;
+  height: 270px;
+  box-shadow: 4px  2px 105px gray;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+.services_title {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+.services_description{
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+.services_btn{
+    padding: 5px 20px;
+    font-family:sans-serif;
+    font-size: 14px;
+    background-color: #173f46;
+    color: white;
+    border-radius: 4px;
+}
+.services_btn:hover{
+    background-color:rgb(143, 84, 65);
+}
+
+/* footer section */
+.footer_box{
+    width: 22%;
+}
+.footer_container{
     display: flex;
-    /* background-image: url(./images/background.png), linear-gradient(-90deg, #858282,#000); */
     justify-content: space-around;
+    align-items: center;
+    height: 55vh;
+    padding: 0px 120px;
+    background-color: #000;
+    color: white;
 }
-.services_icon{
-    width: 80px;
+.footer_title{
+    margin-bottom: 10px;
+    font-size: 22px;
+    font-weight: bold;
 }
-.box{
-    width: 250px;
-    height: 300px;
-    box-shadow: 4px 4px 15px gray;
+footer li{
+    text-decoration: none;
+    list-style: none;
+    margin-bottom: 6px;
+}
+footer li:hover{
+    color: rgba(73, 216, 226, 0.728);
+    cursor: pointer;
+}
+footer p,address{
+    margin-bottom: 10px;
+}
+.copy{
+    text-align: center;
+    font-size: 20px;
     background-color: black;
     color: white;
-    text-align: center;
-}
-.services_title{
-    font-size: 30px;
-
+    padding: 10px 0px;
 }
